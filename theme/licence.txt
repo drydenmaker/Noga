@@ -1,0 +1,28 @@
+The MIT License (MIT)
+
+Copyright (c) 2015
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+This theme can also make use of:
+Bootstrap http://getbootstrap.com/ Copyright (c) 2011-2015 Twitter, Inc, licensed under MIT. https://raw.githubusercontent.com/twbs/bootstrap/master/LICENSE
+Modernizr http://modernizr.com, licensed under MIT. http://modernizr.com/license/
+TGM Plugin Activation https://github.com/thomasgriffin/TGM-Plugin-Activation, licensed under GPL v2 or later https://raw.githubusercontent.com/TGMPA/TGM-Plugin-Activation/develop/LICENSE.md
+Google Fonts: font licences on an individual basis: https://www.google.com/fonts/attribution
+Font Awesome https://fortawesome.github.io/Font-Awesome/license/

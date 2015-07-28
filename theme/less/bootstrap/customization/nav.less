@@ -1,0 +1,181 @@
+
+#sitewide_nav
+{
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+				
+		.sublink
+		{
+			clear: both;
+			font-size: x-small;
+			font-weight: normal;
+			
+			color: @navbar-inverse-sublink-color;
+			background-color: @navbar-inverse-sublink-bg;
+		}
+		
+		a.dropdown-toggle
+		{
+			padding: 3px 9px 3px 9px;
+		}
+		
+		.dropdown-menu
+		{
+			font-size: x-small;
+			.border-bottom-radius(5px);
+		}
+		
+		#searchbox
+		{
+			background-color: @brand-light;
+			.border-left-radius(3px);
+			.placeholder(@brand-text-contrast);
+			width: 45%;
+			float: right;
+		}
+		
+		#searchbox:focus
+		{
+			width: 100%;
+		}
+		
+		#global_search_button
+		{
+			background-color: @brand-text;
+			.border-right-radius(3px);
+		}
+		
+		#searchbox, #global_search_button 
+		{
+			
+			color: @brand-text-contrast;
+			border-color: @brand-text;
+		}
+		
+}
+
+.navbar-inverse {
+  	text-transform: uppercase;
+  	font-size: 13px;
+	.navbar-nav > .menu-item .subtitle {
+		clear: both;
+  		font: 11px Arial;
+  		color: #888985;
+  		font-weight: normal;
+	}
+	.navbar-nav > .dropdown {
+		background: url(../images/menu_close_bg.svg) no-repeat bottom center transparent;
+		background-size: 15px 15px;
+	}
+	.navbar-nav > .open {
+	  	background: url(../images/menu_open_bg.svg) no-repeat bottom center transparent;
+	  	background-size: 15px 15px;
+	  	.caret {
+	  		border-top: 0 !important;
+	  	}
+	  }
+	.navbar-nav > li > .dropdown-menu {
+		border-radius: 0 0 10px 10px;
+	}
+	.navbar-nav > li > .dropdown-menu > li > a {
+		color: @brand-text-contrast;
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+    .navbar
+    {
+        .subtitle
+        {
+            display:none;
+        }
+        .width 
+        {
+            position: absolute;
+            z-index: 10000;
+
+            margin-right: 12vw;
+            left: 0;
+            width: 88vw; 
+            transform: translateX(-100%);
+            transition: width 0.0s, background-color 0.4s, transform .3s;
+            background-color: @brand-primary;
+
+          &.collapsing
+          {
+            background-color: black;  
+          }
+
+          &.in
+          {
+              background-color: @gray-dark;
+              transform: translateX(0);
+          }
+
+          .navbar-nav
+          {
+              a {
+                  width: 100%;
+              }
+              .open > a {
+                    color: @gray;
+                    background: @gray-dark !important;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+              >li {
+                  border-bottom: 1px solid #414042;
+                  >a{
+                        color: @gray;
+                        text-shadow: none;
+                        letter-spacing: .1rem;
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+              }
+              .dropdown-menu
+              {
+                  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+                  border-radius: 0;
+                  padding-bottom: 0;
+                  margin-left: -5px;
+                  margin-right: -10px;
+                  background-color: @gray;
+                  >li
+                  {
+                      
+                      border-bottom: 1px solid #414042;
+                      >a {
+                          font-weight: 400;
+                          font-size: 14px;
+                          width: 100%;
+                          color: @gray-dark;
+                      }
+                      >a:hover {
+                          color: @gray-lighter;
+                      }
+                  }
+             }
+          }
+        }
+    }
+}
+
+.navbar-form .search-form input:focus
+{
+	width: 100%;
+}
+
+.navbar-form .search-submit
+{
+	background-color: @brand-text;
+	.border-right-radius(3px);
+}
+
+.navbar-form .search-form input, .navbar-form .search-submit 
+{
+	
+	color: @brand-text-contrast;
+	border-color: @brand-text;
+}
